@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+}
+#top-container-list{
+    margin-bottom: 0;
+    font-weight: bolder;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+background-color: grey;
+}
+#urk-pravda{
+    text-align: center;
+}
+ul{
+
+    padding:0 200px 0 200px;
+    list-style: none;
+}
+#wrapper{
+margin:0;
+    background-color: #7e0019;;
+}
+#wrapper{
+
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+#subtitle{
+
+width: 100%;
+
+}
+p{
+    color: white;
+    margin-top: 0;
+}
+h1{
+   color: white;
+    margin-bottom: 0;
+}
+#title{
+    text-align: center;
+}
+#bottom-container-list{
+    font-weight: bolder;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: grey;
+    margin-top: 0;
+    flex-wrap: nowrap;
+}
+#covid-title{
+    font-weight: bolder;
+    font-size: 20px;
+    color: #900022;
+
+}
+.blocks{
+
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+.block-1{
+
+    width: 290px;
+    background-color: #ffeac2;
+    height: 75px;
+
+
+}
+
+.block-title{
+    padding: 10px 20px;
+font-size: 11px;
+
+}
+
+.stat{
+    font-size: 40px;
+    font-weight: bold;
+    color: #900022;
+
+}
+.box-container{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-around;
+}
+.opacity{
+    align-self: center;
+}
+#covid-info{
+    padding: 5px;
+}
+.navigation{
+   color: #900022;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+.img-medic{
+    height: 200px;
+    width: 250px;
+}
+#container-top{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    padding: 10px;
+}
+#large-img{
+    width: 620px;
+    height: 420px;
+}
+#main-content{
+    display: flex;
+}
+.titles{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.subtitles{
+    padding-top:10px;
+}

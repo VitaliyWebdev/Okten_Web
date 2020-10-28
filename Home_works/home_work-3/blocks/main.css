@@ -1,0 +1,38 @@
+/**{*/
+/*    margin: 0;*/
+/*}*/
+/*#container{*/
+/*    display: flex;*/
+/*    background-color: black;*/
+/*height: 500px;*/
+/*   align-items: flex-start;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+.long-box{
+    width: 100%;
+    height: 100px;
+    background-color: orange;
+}
+.block{
+
+ width: 25%;
+    height: 200px;
+
+}
+#red{
+
+    background-color: red;
+}
+#green{
+    background-color: green;
+}
+#purple{
+    background-color: purple;
+}
+#yellow{
+    background-color: yellow;
+}
+
+.main {
+    display: flex;
+}

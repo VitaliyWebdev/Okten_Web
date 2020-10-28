@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#logo_img{
+    width: 140px;
+}
+nav{
+    padding:15px;
+    margin-left: 265px;
+}
+
+.inline-block, nav ul li {
+    display: inline-block;
+}
+
+
+li {
+    margin-left: 25px;
+}
+ul{
+
+    margin-top:30px;
+}
+#left_row{
+    display: inline-block;
+    width: 200px;
+  
+}
+h1{
+    display: inline;
+}
+#isak_img{
+    height: 200px;
+}
+
+#central_info{
+    display:inline-block ;
+    width:900px;
+  
+}
+ol{
+    margin-top: 0;
+}
+
+.xxx {
+    display: flex;
+}
+h3{
+    text-align: center;
+}
+#descriptions{
+    display: flex;
+
+}
+#house_img{
+    width: 200px;
+    height: 200px;;
+}

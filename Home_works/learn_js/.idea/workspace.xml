@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cc6459c3-b5ea-4369-b17f-18acdb35d0cf" name="Default Changelist" comment="First practice js" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jQlEw5G7fnwMhOfzUJdrOuCzZu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc6459c3-b5ea-4369-b17f-18acdb35d0cf" name="Default Changelist" comment="" />
+      <created>1603744089956</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603744089956</updated>
+      <workItem from="1603744092702" duration="57000" />
+      <workItem from="1603744179271" duration="150000" />
+      <workItem from="1603744351251" duration="4371000" />
+      <workItem from="1603784061217" duration="14255000" />
+      <workItem from="1603803143741" duration="15000" />
+      <workItem from="1603804128830" duration="1832000" />
+      <workItem from="1603818457344" duration="230000" />
+      <workItem from="1603818711196" duration="252000" />
+      <workItem from="1603818989413" duration="3000" />
+      <workItem from="1603888222068" duration="424000" />
+    </task>
+    <task id="LOCAL-00001" summary="First home work js">
+      <created>1603802992073</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603802992073</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First home work js">
+      <created>1603804176681</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603804176682</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First practice js">
+      <created>1603818583325</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603818583325</updated>
+    </task>
+    <task id="LOCAL-00004" summary="First practice js">
+      <created>1603818756017</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603818756017</updated>
+    </task>
+    <task id="LOCAL-00005" summary="First practice js">
+      <created>1603818818194</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603818818194</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First home work js" />
+    <MESSAGE value="First practice js" />
+    <option name="LAST_COMMIT_MESSAGE" value="First practice js" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="129" y="54" key="DiffContextDialog" timestamp="1603804139149">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="54" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1603804139149" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1603803156341">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603803156341" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1603818820711">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603818820711" />
+    <state x="731" y="0" width="553" height="714" key="dock-window-1" timestamp="1603744199974">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="731" y="0" width="553" height="714" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1603744199974" />
+  </component>
+</project>
