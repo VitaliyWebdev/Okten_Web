@@ -229,42 +229,42 @@
 // -- за допоиоги циклу знайти яка попелюшка повинна бути з принцом
 // ==============================================клас принц і метод який буде бігати по масививу попелющок і звіряти розмір ноги
 
-class Girl{
-    constructor(name, age, size) {
-        this.name = name;
-        this.age = age;
-        this.size = size;
-    }
-}
+// class Girl{
+//     constructor(name, age, size) {
+//         this.name = name;
+//         this.age = age;
+//         this.size = size;
+//     }
+// }
 
-
-let a1 = new Girl('Olga', 35, 45)
-let a2 = new Girl('Ira', 22, 35)
-let a3 = new Girl('Marfa', 78, 40)
-
-let arr = [a1, a2, a3];
-
-class Prince {
-    constructor(boot) {
-        this.boot = boot;
-    }
-    method(arr) {
-        for (const arrElement of arr) {
-
-            if (arrElement.size === this.boot) {
-                console.log(arrElement.name);
-            }
-        }
-    }
-}
-
-let prince = new Prince(35);
-prince.method(arr);
-
-
-
-let prince2=new Prince(40);
-prince2.method(arr);
+//
+// let a1 = new Girl('Olga', 35, 45)
+// let a2 = new Girl('Ira', 22, 35)
+// let a3 = new Girl('Marfa', 78, 40)
+//
+// let arr = [a1, a2, a3];
+//
+// class Prince {
+//     constructor(boot) {
+//         this.boot = boot;
+//     }
+//     method(arr) {
+//         for (const arrElement of arr) {
+//
+//             if (arrElement.size === this.boot) {
+//                 console.log(arrElement.name);
+//             }
+//         }
+//     }
+// }
+//
+// let prince = new Prince(35);
+// prince.method(arr);
+//
+//
+//
+// let prince2=new Prince(40);
+// prince2.method(arr);
 
 //-створити функцію конструктор попелюшка з полями ім'я, вік, розмір ноги
 // --Створити 10 попелюшок , покласти їх в масив
@@ -272,32 +272,37 @@ prince2.method(arr);
 // -- функція повинна приймати масив попелюшок, та шукає ту котра йому підходить
 // ==============================================
 
-class Girl{
-    constructor(name, age, size) {
+function Girl(name, age, size){
         this.name = name;
         this.age = age;
         this.size = size;
     }
-}
 
 
 let a1 = new Girl('Olga', 35, 45)
 let a2 = new Girl('Ira', 22, 35)
-let a3 = new Girl('Marfa', 78, 40)
-let a4 = new Girl('Marfa', 78, 40)
-let a5 = new Girl('Marfa', 78, 40)
-let a6 = new Girl('Marfa', 78, 40)
-let a7 = new Girl('Marfa', 78, 40)
-let a8 = new Girl('Marfa', 78, 40)
-let a9 = new Girl('Marfa', 78, 40)
-let a10 = new Girl('Marfa', 78, 40)
-
+let a3 = new Girl('Marfa', 78, 4)
+// let a4 = new Girl('Marfa', 78, 40)
+// let a5 = new Girl('Marfa', 78, 40)
+// let a6 = new Girl('Marfa', 78, 40)
+// let a7 = new Girl('Marfa', 78, 40)
+// let a8 = new Girl('Marfa', 78, 40)
+// let a9 = new Girl('Marfa', 78, 40)
+// let a10 = new Girl('Marfa', 78, 40
 let arr = [a1, a2, a3];
 
+let prince= {
 
+    princefunc: function (boot) {
+        this.boot = boot
+        for (const arrElement of arr) {
+            if (arrElement.size === this.boot) {
+              prince.name=
+            }
 
-
-
+        }
+    }
+}
 
 
 

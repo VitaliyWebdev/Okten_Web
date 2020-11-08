@@ -176,6 +176,35 @@
 // }
 // console.log(a);
 
+// const a = document.getElementsByTagName('a');
+// for (const i of a) {
+//     let XXX = i.innerText;
+//     console.log(XXX);
+//     let className = `element_${XXX}`;
+//     i.classList.add(className);
+// }
+
+
+
+
+
+
+
+
+
+
+//-- отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текс
+// const a = document.getElementsByTagName('a');
+// for (const i of a) {
+// let X = i.innerText;
+//     console.log(X);
+//     i.classList.add(`Element_${X}`)
+// }
+
+
+
+
+
 
 
 // -- отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()

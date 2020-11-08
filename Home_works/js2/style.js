@@ -177,6 +177,43 @@
 
  //Відтворити роботу годинника, відрахувавши 2 хвилини (2 цикли! 1й - хвилини, 2й - секунди
 
+// for (let i=1;i<60;i++){
+//     console.log(`${i} sec`);
+//     if(i>=59){
+//         for(let i = 0;i<60;i++){
+//             console.log(`1 min ${i} sec`)
+//         }
+//     }
+// }
+
+
+//- Відтворити роботу годинника, відрахувавши  2 години 20 хвилини (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
+
+//
+//     let i = 0
+//     let m = 0
+//     let h = 0
+//     for (i=1;i<60;i++){
+//     console.log(`${i} sec`);
+//     if(i>=58){
+//         for(let i = 0;i<59;i++){
+//             m++
+//             console.log(`${m} min ${i} sec`)
+//         }
+//     }
+//     if (m >= 58) {
+//         h++
+//         console.log(`${h} hours, ${m} min, ${i} sec`)
+//     }
+// }
+//
+
+
+
+
+
+
+
 
 // for(let i=1;i<60;i++){
 //     console.log(`${i} sec`)
@@ -426,6 +463,15 @@
 // let arr2=arr.slice(3,5)
 // console.log(arr2);
 
+//Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції slice перетворіть масив в [1,2].
+//
+// let arr = [1,2,3,4,5];
+// let arr2=arr.slice(0,2);
+// console.log(arr2);
+
+//Дан масив [1, 2, 3, 4, 5]. За допомогою методу/функції splice перетворіть масив в [1, 4, 5].
+
+
 
 // .. вивести масив в зворотньому порядку.
 
@@ -463,3 +509,114 @@
 // }
 //
 // console.log(arr);
+
+
+//3. используя Math.random заполнить массив из ???(сколько хотите) элементов.
+//  диапазон рандома 8 до 732. (но сначала пробуйте БЕЗ ДИАПАЗОНА!)
+
+
+
+
+// Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
+
+// let arr = [ 'a', 'b', 'c'];
+// let str ='';
+// for (const i of arr) {s
+//     str=+arr[i];
+//     console.log(str);
+// }
+
+// let str = '';
+// for(i=0;i<arr.length;i++){
+//     str=str+arr[i];
+//
+// }
+// console.log(str);
+//
+//--------------------------------------------------------
+//
+// let user={
+//     name: 'Dima',
+//     age: 23,
+//     car: false,
+//     son:{
+//         name:'Ivan',
+//         age: 1
+//     }
+// }
+//
+// let string = Object.keys(user)
+// let value = Object.values(user)
+// Object.entries!!
+// console.log(string);
+// console.log(value);
+
+// let user={
+//     name: 'Dima',
+//     age: 23,
+//     car: false,
+//     son:{
+//         name:'Ivan',
+//         age: 1
+//     }
+// }
+//
+// let x=JSON.stringify(user)
+// let y =JSON.parse(x);
+// console.log(x);
+// console.log(y);
+
+
+// let arr = ['a','b','c'];
+// let string ='';
+// for(  let x of arr){
+//     string=string+x;
+// }
+// console.log(string);
+
+//
+//
+// let arr = ['a','b','c'];
+// let string ='';
+// for(  let x in arr){
+//     string=string+arr[x];
+// }
+// console.log(string);
+// const user = {
+//     name:'Alex',
+//     age:25
+// }
+//
+//
+//
+// let htmlDivElement = document.createElement('div');
+// htmlDivElement.innerText=`${user.name} - ${user.age}`
+// document.body.appendChild(htmlDivElement);
+//
+//
+
+
+const user={
+    name:'Alex',
+    age:100
+}
+
+
+let xxx={};
+for(const key in user){
+    console.log(key, user[key]);
+    xxx[key]=user[key]
+}
+console.log(xxx);
+xxx.name = 'Oleg'
+console.log(user);
+console.log(xxx);
+
+
+
+
+
+
+
+
+
