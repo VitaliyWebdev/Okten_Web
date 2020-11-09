@@ -1,18 +1,18 @@
 // створити функцію яка виводить масив
-// arr=[1,2,3,4,5,6,7,true,false]
-// function array(){
-//     console.log(arr);
-// }
-// array();
+arr=[1,2,3,4,5,6,7,true,false]
+function array(putarr){
+    console.log(putarr);
+}
+array(arr);
 //створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попвередню функцію.
-// let arr =[];
-// function randomarr(){
-//     for( let i=0;i<10;i++){
-//         arr[i]=Math.random()
-//     }
-//     console.log(arr);
-// }
-// randomarr();
+ let arrempty =[];
+function randomarr(putarr){
+    for( let i=0;i<10;i++){
+        arrempty[i]=Math.random()
+    }
+    array(arrempty)
+}
+randomarr();
 
 
 //- створити функцію яка приймає три числа та виводить та повертає найменьше.
@@ -438,9 +438,20 @@
 //
 // }
 
-
-
-
+// let sum=0;
+// for (let i = 0; i <= 100; i++) {
+//    sum+=i;
+//
+// }
+// console.log(sum);
+// function SumTo(n){
+//     if (n === 1) return 1;
+//     return n + SumTo(n - 1);
+//
+//
+//
+// }
+// alert(SumTo(100));
 
 
 
