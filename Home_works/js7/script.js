@@ -273,12 +273,25 @@ let usersWithAddress = [
 // 3й - оставляет тех у кого город киев
 // Данные выводить в документ
 
+let inputstatus = document.getElementById('status_filter');
+let inputage = document.getElementById('age_filter');
+let inputcity = document.getElementById('city_filter');
+inputstatus.onclick=()=>{
+    usersWithAddress = usersWithAddress.filter( value =>  value.status === false  )
+    console.log(usersWithAddress);
+    }
 
 
 
+inputage.onclick=()=>{
+    usersWithAddress = usersWithAddress.filter( value => value.age >= 29    )
+console.log(usersWithAddress)
+}
 
-
-
+inputcity.onclick=()=>{
+    usersWithAddress = usersWithAddress.filter( value => value.address.city === 'Kyiv'    )
+    console.log(usersWithAddress)
+}
 
 
 // *****(Прям овердоз с рекурсией) Создать функцию которая принимает какой-либо элемент DOM-структуры .Функция создает в боди 2 кнопки (назад/вперед)
