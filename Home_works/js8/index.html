@@ -16,10 +16,7 @@
 <!--    <textarea style="width:200px; height: 100px;" id="area" placeholder="Write text here"></textarea>-->
 <!--</form>-->
 
-<textarea style="width:200px; height: 100px;" id="area" placeholder="Write text here"></textarea>
-<button id="btn">SAVE</button>
-<button id="left">Left</button>
-<button id="right">Right</button>
+
 <script>
     //     // - Дана textarea.
     //     //     В неё вводится текст.
@@ -50,41 +47,6 @@
     // save(inp2);
     // save(inp3);
     // save(area);
-
-
-    // -Дан текстареа. В него можно ввести данные, нажать кнопку "сохранить" и они "фикисруются" (в хранилище), затем поредактировать их, затем еще поредактировать и возможно еще.....
-    // Требование : хранить историю своих изменений (даже после перезагрузки страницы).
-    // Сверху над текстареа должны появится стрелочки, с помощью которых можно перемещаться по истории (не забудьте!чекпоинт истории - нажатеи кнопки сохранить).
-//     area = document.getElementById('area');
-//     let arr = JSON.parse(localStorage.getItem('info'))||[];
-//     let index = arr.length-1
-//     area.value = arr[index]
-//     btn = document.getElementById('btn');
-//     btnright = document.getElementById('right');
-//     btnleft = document.getElementById('left');
-//
-//     btn.onclick = () => {
-//         const arr = JSON.parse(localStorage.getItem('info')) || [];
-//         arr.push(area.value)
-//
-//         localStorage.setItem('info', JSON.stringify(arr))
-//         console.log(arr);
-//     }
-//     btnleft.onclick = () => {
-//         const arr2 = JSON.parse(localStorage.getItem('info')) || [];
-//         console.log(arr2);
-//         area.value = arr2[--index];
-// if(area.value===arr2[0]){
-//     area.value = arr2[++index];;
-// }
-//     }
-//
-//
-// btnright.onclick=()=>{
-//         const arr3 = JSON.parse(localStorage.getItem('info')) || [];
-//         area.value=arr3[++index];
-//
-// }
 
 </script>
 </body>
