@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<textarea style="width:200px; height: 100px;" id="area" placeholder="Write text here"></textarea>        для першого таску розкоментуй-->
+
+
+<!--для 2таску-->
+<!--<form action="">-->
+<!--    <input type="text" id="inp1">-->
+<!--    <input type="checkbox" id="inp2">-->
+<!--    <input type="radio" id="inp3" >-->
+<!--    <textarea style="width:200px; height: 100px;" id="area" placeholder="Write text here"></textarea>-->
+<!--</form>-->
+
+<textarea style="width:200px; height: 100px;" id="area" placeholder="Write text here"></textarea>
+<button id="btn">SAVE</button>
+<button id="left">Left</button>
+<button id="right">Right</button>
+<script>
+    //     // - Дана textarea.
+    //     //     В неё вводится текст.
+    //     //     Сделайте так, чтобы после захода на эту страницу через некоторое время, введенный текст остался в textarea.
+    // let area = document.getElementById('area');
+    //
+    // area.oninput = ()=>{
+    //     localStorage.setItem('area',area.value)
+    // }
+    // area.value = localStorage.getItem('area')
+
+    // - Дана форма с инпутами, текстареа, чекбоксами, радио кнопочками, селектами и тп.
+    //     Пользователь вводит какие-то данные и закрывает страницу (не факт, что он заполнил всю форму).
+    // Сделайте так, чтобы при следующем заходе на страницу введенные им ранее данные стояли на своих местах.
+    //     Сделайте ваш скрипт как можно более универсальным.
+    //
+    // let inp1=document.getElementById('inp1');
+    // let inp2=document.getElementById('inp2');
+    // let inp3=document.getElementById('inp3');
+    // let area=document.getElementById('area');
+    // function save(arg){
+    //     arg.oninput = ()=>{
+    //         localStorage.setItem('saved',arg.value)
+    //     }
+    //     arg.value = localStorage.getItem('saved')
+    // }
+    // save(inp1);
+    // save(inp2);
+    // save(inp3);
+    // save(area);
+
+
+    // -Дан текстареа. В него можно ввести данные, нажать кнопку "сохранить" и они "фикисруются" (в хранилище), затем поредактировать их, затем еще поредактировать и возможно еще.....
+    // Требование : хранить историю своих изменений (даже после перезагрузки страницы).
+    // Сверху над текстареа должны появится стрелочки, с помощью которых можно перемещаться по истории (не забудьте!чекпоинт истории - нажатеи кнопки сохранить).
+//     area = document.getElementById('area');
+//     let arr = JSON.parse(localStorage.getItem('info'))||[];
+//     let index = arr.length-1
+//     area.value = arr[index]
+//     btn = document.getElementById('btn');
+//     btnright = document.getElementById('right');
+//     btnleft = document.getElementById('left');
+//
+//     btn.onclick = () => {
+//         const arr = JSON.parse(localStorage.getItem('info')) || [];
+//         arr.push(area.value)
+//
+//         localStorage.setItem('info', JSON.stringify(arr))
+//         console.log(arr);
+//     }
+//     btnleft.onclick = () => {
+//         const arr2 = JSON.parse(localStorage.getItem('info')) || [];
+//         console.log(arr2);
+//         area.value = arr2[--index];
+// if(area.value===arr2[0]){
+//     area.value = arr2[++index];;
+// }
+//     }
+//
+//
+// btnright.onclick=()=>{
+//         const arr3 = JSON.parse(localStorage.getItem('info')) || [];
+//         area.value=arr3[++index];
+//
+// }
+
+</script>
+</body>
+</html>
