@@ -7,76 +7,228 @@
 <body>
 <script>
 
-    // function morningWashing(number, washing) {
-    //     console.log('Пора вставати з ліжка');
-    //     console.log('Йду в душ');
-    //     setTimeout(() => {
-    //         if (number < 0.5) {
-    //             washing()
-    //         } else {
-    //             console.log('Гаряча вода закінчилась=(')
-    //         }
-    //     }, 2000)
+
+
+    //PROMISE
+    //
+    // function getUp(wakeUp){
+    //     console.log('Просинаюсь')
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(()=>{
+    //             if(Math.random()>0.5){ resolve(wakeUp)}
+    //             reject('Не вставатиму')
+    //         },1500)
+    //
+    //     })
     // }
     //
     //
-    // morningWashing(Math.random(), () => {
-    //     console.log('Миюсь=)');
-    // });
+    // function breakfast(meal){
+    //     console.log('Йду поїм')
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(()=>{
+    //             if(Math.random()>0.5){ resolve(meal)}
+    //             reject('В холодильнику миша повісилась')
+    //         },1500)
     //
-    // //-----------------------------------
+    //     })
+    // }
     //
-    // function breakfest(number, eating) {
-    //     console.log('Йду поснідаю');
-    //     setTimeout(() => {
-    //         if (number < 0.5) {
-    //             eating()
-    //         } else {
-    //             console.log('В холодильнику миша повісилась')
-    //         }
-    //     }, 2000)
+    // function walking(walk){
+    //     console.log('Йду гуляти')
+    //     return new Promise((resolve, reject) => {
+    //         setTimeout(()=>{
+    //             if(Math.random()>0.5){ resolve(walk)}
+    //             reject('На вулиці дощ, сиджу вдома')
+    //         })
+    //
+    //     })
     // }
     //
     //
-    // breakfest(Math.random(), () => {
-    //     console.log('Хаваю Кашку на сніданок=)');
-    // });
+    // getUp('Вмиваюсь').then((data) => {
+    //     console.log(data);
     //
-    //
+    //     return breakfast();
+    // })
+    // .then((data1)=>{
+    //     data1
+    //     return walking;
+    // })
+    //   .then((data2)=>{
+    //       data2
+    //       return;
+    //   })
 
 
-    function morningToDO(number, washing) {
-        console.log('Треба вставати');
-        setTimeout(() => {
-            console.log('Треба йти в душ');
-            if (number > 0.5) {
-                washing();
-                setTimeout(()=>{
-                    breakfest(Math.random(),()=>{      //колбек eatingProcess
-                        console.log('Хаваю')
-                    })
-                },2000)
+////////////////////////////callllllllllllllll backkkkkkkkkkkkkkkkkkk/////////////////////////////
+    function myDay(number,doSport){
+        console.log('Прокидаюся')
+
+        setTimeout(()=>{
+            if(number<0.5){
+                doSport('Не має сил',null)
             }
             else{
-                console.log('Вода закінчилась =(')
+                doSport(null,'Тренуюся...')
             }
-        }, 2000)
+        },1000)
     }
 
-
-    morningToDO(Math.random(), () => {   //функція колбек washing
-        console.log('Купаюся...каєф=)')
-    })
-
-
-
-    function breakfest(number,eatingProcess){
-        console.log('Збираюся йти їсти');
-        if(number>0.5){eatingProcess()}
-        else {
-            console.log('В холодильнику миша повісилась =(')
+function breakfast(num,meal){
+    console.log('Збираюся йти поїсти');
+    setTimeout(()=>{
+        if(num<0.5){
+            meal('Не буду їсти, треба вчитися',null)
         }
+        else{
+            meal(null,'....Мммм Хаваю...=)')
+        }
+    },1000)
+}
+
+
+
+function washing(number,shower){
+    console.log('Збираюся в душ ');
+    setTimeout(()=>{
+        if(number<0.5) {
+            shower('Гаряча вода скінчилась =(', null)
+        }
+            else {
+                shower(null,'***Приймаю ванну**')
+            }
+
+    },1000)
+}
+
+
+function walking(number,walk){
+    console.log('Збираюся на прогулянку');
+    setTimeout(()=>{
+        if(number<0.5){
+            walk('Збираєтсья гроза',null);
+        }
+        else{
+            walk(null,'***Юхуув я гуляю***');
+        }
+    },1000)
+}
+
+
+function watching(number,watch){
+    console.log('Збираюсь подивитись відосік');
+    setTimeout(()=>{
+        if(number<0.5){
+            watch('Не має інтернету =(',null);
+
+        }
+        else{
+            watch(null,'Дивлюся відосіки');
+        }
+    },1000)
     }
+
+    function dinner(number,meal){
+        console.log('Збираюся повечеряти');
+        setTimeout(()=>{
+            if(number<0.5){
+                meal('Нема шо їсти =(',null)
+            }
+            else{
+                meal(null,'Мм вечеряю');
+            }
+
+        },1000)
+    }
+
+
+function goToSleep(number,sleep){
+    console.log('Збираюся спати');
+    setTimeout(()=>{
+        if(number<0.5){
+            sleep('Нема чого спати, треба вчитися',null);
+        }
+        else{
+            sleep(null,'Спатоньки...ZzZzZzZzZzZ')
+        }
+    },1000)
+}
+
+
+
+
+
+
+
+
+myDay(Math.random(),(eror,training)=>{
+    if(eror){
+        console.log('Сплю***ZzZzZZZzzz**');
+        return ;
+    }
+    console.log(training);
+    breakfast(Math.random(),(eror,eat)=>{
+        if(eror){
+            console.log(eror);
+            return ;
+        }
+        console.log(eat)
+        washing(Math.random(),(eror,water)=>{
+            if(eror){
+                console.log(eror);
+                return ;
+            }
+            console.log(water)
+            walking(Math.random(),(eror,walkData)=>{
+                if(eror){
+                    console.log(eror);
+                    return ;
+                }
+                console.log(walkData);
+                watching(Math.random(),(eror,watchData)=>{
+                    if(eror){
+                        console.log(eror);
+                        return ;
+                    }
+                    console.log(watchData)
+                    dinner(Math.random(),(eror,mealData)=>{
+                        if(eror){
+                            console.log(eror);
+                            return;
+                        }
+                        console.log(mealData)
+                        goToSleep(Math.random(),(eror,sleepData)=>{
+                            if(eror){
+                                console.log(eror);
+                                return ;
+                            }
+                            console.log(sleepData)
+                        })
+                    })
+                })
+            })
+        })
+    })
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </script>
 </body>
