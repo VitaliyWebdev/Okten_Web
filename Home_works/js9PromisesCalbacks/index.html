@@ -7,112 +7,47 @@
 <body>
 <script>
 
-    //    let money = 0;
-    //
-    //    function clearHouse(cb) {
-    //        setTimeout(() => {
-    // money = 999;
-    // cb();
-    //        }, 1000)
-    //    }
-    //
-    //
-    //    clearHouse(()=>{
-    //        console.log(money)
-    //    })
 
 
-    // function orderTour() {
-    //     console.log('Дякую що звернулись до нас');
-    //     console.log('Tour in progres....');
-    //     setTimeout(() => {
-    //         console.log('DONE')
-    //     },2000)
-    // }
-    //
-    //
-    // orderTour(()=>{
-    //     console.log('Ура летимо на моря!!!');
-    // })
-    let compare = 0.5;
 
-    function myDay(morning, washing, eating, watching, lunch, learning, sleep) {
+    function morningWashing(number, washing) {
+        console.log('Пора вставати з ліжка');
+        console.log('Йду в душ');
         setTimeout(() => {
-            if (compare > Math.random()) {
-                morning();
-                setTimeout(() => {
-                    console.log('Йду вмиватись...')
-                    if (compare > Math.random()) {
-                        washing();
-                        setTimeout(() => {
-                            console.log('Йду снідати....')
-                            if (compare > Math.random()) {
-                                eating()
-                                setTimeout(() => {
-                                    console.log('Збираюсь глянути курси....')
-                                    if (compare > Math.random()) {
-                                        watching();
-                                        setTimeout(() => {
-                                            console.log('Йду поїм ще раз...')
-                                            if (compare > Math.random()) {
-                                                lunch();
-                                                setTimeout(() => {
-                                                    console.log('збираюсь повчитись....')
-                                                    if (compare > Math.random()) {
-                                                        learning();
-                                                        setTimeout(() => {
-                                                            console.log('Збираюся йти спати...')
-                                                            if (compare > Math.random()) {
-                                                                sleep();
-                                                            } else {
-                                                                console.log('Дуже важка тема була, спати не буду йду вчитись')
-                                                            }
-                                                        }, 2500)
-                                                    } else {
-                                                        console.log('Знову світло вирубили=(')
-                                                    }
-                                                }, 2300)
-                                            } else {
-                                                console.log('Потрібно сходити в магаз за хавкою =(')
-                                            }
-                                        }, 1700)
-                                    } else {
-                                        console.log('Інет фіговий, в поганій якості не видно коду=(')
-                                    }
-                                }, 1500)
-                            } else {
-                                console.log('В холодильнику миша повісилась, голодую=(')
-                            }
-                        }, 1300)
-                    } else {
-                        console.log('Закінчилась вода=(')
-                    }
-                }, 1000)
-
+                       if (number < 0.5) {
+                washing()
             } else {
-                console.log('Це не ранок!')
+                console.log('Гаряча вода закінчилась=(')
             }
-        }, 1000)
+        }, 2000)
     }
 
-    myDay(() => {              //morning========
-        console.log('Прокинувся=)')
 
-    }, () => {                //washing=======
-        console.log('Вмиваюсь=)')
-    }, () => {               //eating======
-        console.log('Холодильник Повний Їжі=)')
-        console.log('Хаваю=)')
+    morningWashing(Math.random(), () => {
+        console.log('Миюсь=)');
+    });
 
-    }, () => {            //watching  ======
-        console.log('Дивлюсь курси в full HD =) ')
-    }, () => {           //lunch========
-        console.log('Хаваю.....=)')
-    }, () => {              //learning========
-        console.log('Вчу JAVA SCRIPT =) ')
-    }, () => {               //sleep =======
-        console.log('Сплю')
-    })
+    //-----------------------------------
+
+    function breakfest(number, eating) {
+        console.log('Йду поснідаю');
+        setTimeout(() => {
+            if (number < 0.5) {
+                eating()
+            } else {
+                console.log('В холодильнику миша повісилась')
+            }
+        }, 2000)
+    }
+
+
+    breakfest(Math.random(), () => {
+        console.log('Хаваю Кашку на сніданок=)');
+    });
+
+
+
+
 
 </script>
 </body>
