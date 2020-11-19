@@ -7,47 +7,76 @@
 <body>
 <script>
 
+    // function morningWashing(number, washing) {
+    //     console.log('Пора вставати з ліжка');
+    //     console.log('Йду в душ');
+    //     setTimeout(() => {
+    //         if (number < 0.5) {
+    //             washing()
+    //         } else {
+    //             console.log('Гаряча вода закінчилась=(')
+    //         }
+    //     }, 2000)
+    // }
+    //
+    //
+    // morningWashing(Math.random(), () => {
+    //     console.log('Миюсь=)');
+    // });
+    //
+    // //-----------------------------------
+    //
+    // function breakfest(number, eating) {
+    //     console.log('Йду поснідаю');
+    //     setTimeout(() => {
+    //         if (number < 0.5) {
+    //             eating()
+    //         } else {
+    //             console.log('В холодильнику миша повісилась')
+    //         }
+    //     }, 2000)
+    // }
+    //
+    //
+    // breakfest(Math.random(), () => {
+    //     console.log('Хаваю Кашку на сніданок=)');
+    // });
+    //
+    //
 
 
-
-    function morningWashing(number, washing) {
-        console.log('Пора вставати з ліжка');
-        console.log('Йду в душ');
+    function morningToDO(number, washing) {
+        console.log('Треба вставати');
         setTimeout(() => {
-                       if (number < 0.5) {
-                washing()
-            } else {
-                console.log('Гаряча вода закінчилась=(')
+            console.log('Треба йти в душ');
+            if (number > 0.5) {
+                washing();
+                setTimeout(()=>{
+                    breakfest(Math.random(),()=>{      //колбек eatingProcess
+                        console.log('Хаваю')
+                    })
+                },2000)
+            }
+            else{
+                console.log('Вода закінчилась =(')
             }
         }, 2000)
     }
 
 
-    morningWashing(Math.random(), () => {
-        console.log('Миюсь=)');
-    });
+    morningToDO(Math.random(), () => {   //функція колбек washing
+        console.log('Купаюся...каєф=)')
+    })
 
-    //-----------------------------------
 
-    function breakfest(number, eating) {
-        console.log('Йду поснідаю');
-        setTimeout(() => {
-            if (number < 0.5) {
-                eating()
-            } else {
-                console.log('В холодильнику миша повісилась')
-            }
-        }, 2000)
+
+    function breakfest(number,eatingProcess){
+        console.log('Збираюся йти їсти');
+        if(number>0.5){eatingProcess()}
+        else {
+            console.log('В холодильнику миша повісилась =(')
+        }
     }
-
-
-    breakfest(Math.random(), () => {
-        console.log('Хаваю Кашку на сніданок=)');
-    });
-
-
-
-
 
 </script>
 </body>
