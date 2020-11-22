@@ -316,132 +316,237 @@
 
 
 
-    //Async Await ==============
+    // //Async Await ==============
+    //
+    // function getUp(num){
+    //     return new Promise((resolve, reject) => {
+    //         console.log('Потрібно вставати')
+    //         setTimeout(()=>{
+    //             if(num<0.5){
+    //                 reject('Нєє буду спати');
+    //             }
+    //             else{
+    //                 resolve('Прокидаюсь=)')
+    //             }
+    //         },1000)
+    //     })
+    // }
+    // function washing(num){
+    //     return new Promise((resolve, reject) => {
+    //         console.log('Треба йти в душ')
+    //         setTimeout(()=>{
+    //             if(num<0.5){
+    //                 reject('Гаряча вода закінчилась');
+    //             }
+    //             else{
+    //                 resolve('В душику каєф=)')
+    //             }
+    //         },1000)
+    //     })
+    // }
+    //
+    //
+    //
+    // function watching(num){
+    //     return new Promise((resolve, reject) => {
+    //         console.log('Збираюся втикати лекцію');
+    //         setTimeout(()=>{
+    //             if(num<0.5){
+    //                 reject('Інет закінчився')
+    //             }
+    //             else {
+    //                 resolve('Ура вчуся....')
+    //             }
+    //         },1000)
+    //     })
+    // }
+    //
+    // function walking(num){
+    //     return new Promise((resolve, reject) => {
+    //         console.log('Йду прогулсяюсь');
+    //         setTimeout(()=>{
+    //             if(num<0.5){
+    //                 reject('Погода погана, сидітиму вдома')
+    //             }
+    //             else {
+    //                 resolve('Гуляю....')
+    //             }
+    //         },1000)
+    //     })
+    // }
+    // function studying(num){
+    //     return new Promise((resolve, reject) => {
+    //         console.log('Йду повчусь');
+    //         setTimeout(()=>{
+    //             if(num<0.5){
+    //                 reject('Нєє не маю бажання')
+    //             }
+    //             else {
+    //                 resolve('Сиджу ....Вчусь')
+    //             }
+    //         },1000)
+    //     })
+    // }
+    //
+    // function sport(num){
+    //     return new Promise((resolve, reject) => {
+    //         console.log('Йду займатись спортом');
+    //         setTimeout(()=>{
+    //             if(num<0.5){
+    //                 reject('Нєє я лінива жопа, йду краще повчусь)')
+    //             }
+    //             else {
+    //                 resolve(' уххСпорт ета зизнь...')
+    //             }
+    //         },1000)
+    //     })
+    // }
+    //
+    // function sleep(num){
+    //     return new Promise((resolve, reject) => {
+    //         console.log('Йду спати');
+    //         setTimeout(()=>{
+    //             if(num<0.5){
+    //                 reject('Яке спати....треба домашку зробити')
+    //             }
+    //             else {
+    //                 resolve(' Сплю...ZzzZZZZzzzZZZZzzZZZZZ')
+    //             }
+    //         },1000)
+    //     })
+    // }
+    //
+    // async function myDay(){
+    //     try{
+    //         const step1 = await getUp(Math.random());
+    //         console.log(step1);
+    //         const step2 = await washing(Math.random())
+    //         console.log(step2);
+    //         const step3 = await watching(Math.random());
+    //         console.log(step3);
+    //         const step4 = await walking(Math.random());
+    //         console.log(step4);
+    //         const step5 = await studying(Math.random());
+    //         console.log(step5);
+    //         const step6 = await sport(Math.random());
+    //         console.log(step6);
+    //         const step7 = await sport(Math.random());
+    //         console.log(step7);
+    //     }catch (eror){
+    //         console.log('**********')
+    //         console.log('Щось пішло не так')
+    //         console.log(eror)
+    //         console.log('**********')
+    //     }
+    //
+    // }
+    //
+    // myDay()
 
-    function getUp(num){
-        return new Promise((resolve, reject) => {
-            console.log('Потрібно вставати')
+
+
+    // Реалізувати друкарську машинку.
+    //     У вас є текст "Hello World".
+    //     Ваша функція має друкувати цей текст по 1 симоволу в браузері.
+    //     КОЖНА нова буква має бути з РАНДОМНОЮ заутримкою від 0.1 до 1 секунди.
+    //     Цим самим ви маєте симулювати написання даного тексту юзером.
+    //     Приклад: "Hello"
+    // Затримки:
+    //     H (затримка 0.6)
+    // e (затримка 0.1)
+    // l (затримка 0.3)
+    // l (затримка 0.7)
+    // о (затримка 1)
+    //
+    // #task
+
+    let words = 'Hello'.toLowerCase();
+    let arr = words.split('');
+
+    function h(array){
+        return new Promise(resolve => {
             setTimeout(()=>{
-                if(num<0.5){
-                    reject('Нєє буду спати');
+                for (const item of array) {
+                    if(item==='h'){
+                        resolve(item)
+
+                    }
                 }
-                else{
-                    resolve('Прокидаюсь=)')
+            },100)
+
+        })
+
+    }
+
+    function e(array){
+        return new Promise(resolve => {
+            setTimeout(()=>{
+                for (const item of array) {
+                    if(item==='e'){
+                        resolve(item)
+
+                    }
+                }
+            },400)
+
+        })
+
+    }
+    function l(array){
+        return new Promise(resolve => {
+            setTimeout(()=>{
+                for (const item of array) {
+                    if(item==='l'){
+                        resolve(item)
+
+                    }
+                }
+            },600)
+
+        })
+
+    }
+    function o(array){
+        return new Promise(resolve => {
+            setTimeout(()=>{
+                for (const item of array) {
+                    if(item==='o'){
+                        resolve(item)
+
+                    }
                 }
             },1000)
+
         })
-    }
-    function washing(num){
-        return new Promise((resolve, reject) => {
-            console.log('Треба йти в душ')
-            setTimeout(()=>{
-                if(num<0.5){
-                    reject('Гаряча вода закінчилась');
-                }
-                else{
-                    resolve('В душику каєф=)')
-                }
-            },1000)
-        })
-    }
-
-
-
-    function watching(num){
-        return new Promise((resolve, reject) => {
-            console.log('Збираюся втикати лекцію');
-            setTimeout(()=>{
-                if(num<0.5){
-                    reject('Інет закінчився')
-                }
-                else {
-                    resolve('Ура вчуся....')
-                }
-            },1000)
-        })
-    }
-
-    function walking(num){
-        return new Promise((resolve, reject) => {
-            console.log('Йду прогулсяюсь');
-            setTimeout(()=>{
-                if(num<0.5){
-                    reject('Погода погана, сидітиму вдома')
-                }
-                else {
-                    resolve('Гуляю....')
-                }
-            },1000)
-        })
-    }
-    function studying(num){
-        return new Promise((resolve, reject) => {
-            console.log('Йду повчусь');
-            setTimeout(()=>{
-                if(num<0.5){
-                    reject('Нєє не маю бажання')
-                }
-                else {
-                    resolve('Сиджу ....Вчусь')
-                }
-            },1000)
-        })
-    }
-
-    function sport(num){
-        return new Promise((resolve, reject) => {
-            console.log('Йду займатись спортом');
-            setTimeout(()=>{
-                if(num<0.5){
-                    reject('Нєє я лінива жопа, йду краще повчусь)')
-                }
-                else {
-                    resolve(' уххСпорт ета зизнь...')
-                }
-            },1000)
-        })
-    }
-
-    function sleep(num){
-        return new Promise((resolve, reject) => {
-            console.log('Йду спати');
-            setTimeout(()=>{
-                if(num<0.5){
-                    reject('Яке спати....треба домашку зробити')
-                }
-                else {
-                    resolve(' Сплю...ZzzZZZZzzzZZZZzzZZZZZ')
-                }
-            },1000)
-        })
-    }
-
-    async function myDay(){
-        try{
-            const step1 = await getUp(Math.random());
-            console.log(step1);
-            const step2 = await washing(Math.random())
-            console.log(step2);
-            const step3 = await watching(Math.random());
-            console.log(step3);
-            const step4 = await walking(Math.random());
-            console.log(step4);
-            const step5 = await studying(Math.random());
-            console.log(step5);
-            const step6 = await sport(Math.random());
-            console.log(step6);
-            const step7 = await sport(Math.random());
-            console.log(step7);
-        }catch (eror){
-            console.log('**********')
-            console.log('Щось пішло не так')
-            console.log(eror)
-            console.log('**********')
-        }
 
     }
 
-    myDay()
+async function machine(){
+try {
+    let letterH = await h(arr);
+    document.write(letterH);
+
+    let letterE = await e(arr);
+    document.write(letterE);
+
+
+    let letterL = await l(arr);
+   document.write(letterL);
+
+    let letterLSecond = await l(arr);
+    document.write(letterLSecond);
+
+    let letterO = await o(arr);
+    document.write(letterO);
+
+
+}catch (err){
+
+}
+    }
+
+machine()
+
 
 </script>
 </body>
