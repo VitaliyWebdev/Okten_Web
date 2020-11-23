@@ -175,20 +175,22 @@
 // }];
 
 //З масиву users за допомогою циклу витягнути адреси користувачів і записати (скопіювати) їх в інший порожній масив.
-//
-// let result = [];
-// for (const user of users) {
-//     result.push(user.address)
-// }
-// console.log(result);
+
+let result = [];
+for (const user of users) {
+    result.push(user.address)
+}
+console.log(result);
 //За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement. Всі данні в одному блоці.
-// for (let i = 0; i < users.length; i++) {
-//     const user = users[i];
-//     let div = document.createElement('div')
-//    div.innerText=`${user.name}   ${user.age}`
-//     console.log(div);
-// }
-//
+for (let i = 0; i < users.length; i++) {
+    const user = users[i];
+    let div = document.createElement('div')
+   div.innerText=`${user.name}   ${user.age}`
+    console.log(div);
+}
+
+
+
 
 // Дано 2 масиви з рівною кількістю об'єктів.
 // Масиви:
@@ -221,21 +223,102 @@
 // --Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. У файлі прописати наступні доступи та дії
 // - знайти всі елементі, які мають class
 // - знайти всі параграфи ,та змінити текст на hello oktenweb!
-//     - знайти всі div та змінити ім колір на червоний
+// //     - знайти всі div та змінити ім колір на червоний
+//
+// let a=document.getElementById('box');
+// let b=document.getElementsByClassName('classbox');
+// let c=document.getElementsByTagName('div');
+// let child=a.innerText='dadadadadadadadadddddddddddddddddddd'
+// // - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
+// a.style.width='20px';
+// a.style.height='20px';
+// a.style.backgroundColor='red';
+// //<table style="border:solid black 1px"><th>dad</th></table>
+// let tabe=document.createElement('table')
+// let str1=document.createElement('th')
+// str1.innerText="Hello";
+// tabe.appendChild(str1)
+//
 
-let a=document.getElementById('box');
-let b=document.getElementsByClassName('classbox');
-let c=document.getElementsByTagName('div');
-let child=a.innerText='dadadadadadadadadddddddddddddddddddd'
-// - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
-a.style.width='20px';
-a.style.height='20px';
-a.style.backgroundColor='red';
-//<table style="border:solid black 1px"><th>dad</th></table>
-let tabe=document.createElement('table')
-let str1=document.createElement('th')
-str1.innerText="Hello";
-tabe.appendChild(str1)
+
+// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
+
+let users = [{
+    name: 'vasya',
+    age: 31,
+    status: false,
+    address: {city: 'Lviv', country: 'Ukraine', street: 'Shevchenko', houseNumber: 1}
+},
+    {
+    name: 'petya',
+    age: 30,
+    status: true,
+    address: {city: 'New York', country: 'USA', street: 'East str', houseNumber: 21}
+},
+    {
+    name: 'kolya',
+    age: 29,
+    status: true,
+    address: {city: 'Budapest', country: 'Hungary', street: 'Kuraku', houseNumber: 78}
+}, {
+    name: 'olya',
+    age: 28,
+    status: false,
+    address: {city: 'Prague', country: 'Czech', street: 'Paster', houseNumber: 56}
+}, {
+    name: 'max',
+    age: 30,
+    status: true,
+    address: {city: 'Istanbul', country: 'Turkey', street: 'Mikar', houseNumber: 39}
+}, {
+    name: 'anya',
+    age: 31,
+    status: false,
+    address: {city: 'Rio', country: 'Brasil', street: 'Ronaldi', houseNumber: 5}
+}, {
+    name: 'oleg',
+    age: 28,
+    status: false,
+    address: {city: 'Montreal', country: 'Canada', street: 'Acusto', houseNumber: 90}
+}, {
+    name: 'andrey',
+    age: 29,
+    status: true,
+    address: {city: 'Quebeck', country: 'Canada', street: 'Binaro', houseNumber: 33}
+}, {
+    name: 'masha',
+    age: 30,
+    status: true,
+    address: {city: 'Moscow', country: 'Russia', street: 'Gogolia', houseNumber: 1}
+}, {
+    name: 'olya',
+    age: 31,
+    status: false,
+    address: {city: 'Portland', country: 'USA', street: 'Forest str', houseNumber: 4}
+}, {
+    name: 'max',
+    age: 31,
+    status: true,
+    address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
+}];
+// - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
+
+//users.map(user=><p>{user.name}</p>)
+
+users.map(user=>{
+    let name = user.name.innerText;
+    console.log(name);
+})
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -272,37 +272,60 @@
 // -- функція повинна приймати масив попелюшок, та шукає ту котра йому підходить
 // ==============================================
 
-function Girl(name, age, size){
-        this.name = name;
-        this.age = age;
-        this.size = size;
-    }
+// function Girl(name,age,size){
+//     this.name=name;
+//     this.age=age;
+//     this.size=size;
+// }
+//
+// let a1 = new Girl('Olga', 35, 45)
+// let a2 = new Girl('Ira', 22, 35)
+// let a3 = new Girl('Marfa', 78, 40)
+// let arr = [a1, a2, a3];
+//
+// function Prince(name,boot){
+//     this.name=name;
+//     this.boot=boot;
+//     this.findPrinces= function(arr){
+//     arr.map(value => {
+// if(value.size ===this.boot){
+//     console.log(`${value.name}`)
+// }
+//     })
+//     }
+// }
+// let Vasya = new Prince('Vasya',40);
+// Vasya.findPrinces(arr)
 
 
-let a1 = new Girl('Olga', 35, 45)
-let a2 = new Girl('Ira', 22, 35)
-let a3 = new Girl('Marfa', 78, 4)
-// let a4 = new Girl('Marfa', 78, 40)
-// let a5 = new Girl('Marfa', 78, 40)
-// let a6 = new Girl('Marfa', 78, 40)
-// let a7 = new Girl('Marfa', 78, 40)
-// let a8 = new Girl('Marfa', 78, 40)
-// let a9 = new Girl('Marfa', 78, 40)
-// let a10 = new Girl('Marfa', 78, 40
-let arr = [a1, a2, a3];
 
-let prince= {
-
-    princefunc: function (boot) {
-        this.boot = boot
-        for (const arrElement of arr) {
-            if (arrElement.size === this.boot) {
-              prince.name=
-            }
-
-        }
-    }
-}
+// =================================================================================================================================================
 
 
+//Створити обєкт автомобіля з полями:
+//     Марка автомобля, потужність двигуна, власник, ціна, рік випуску.
+//     Власник автомобіля теж має бути обєкт, у якого є поля
+// Імя, вік, стаж водіння.
+// //     Створити не менше 7 та не більше 20 машинок.
+let car1 = {marka:'Kia', power:200, owner:{name:'Alex',age:30,experience:10}, price:250000, year:2020};
+let car2 = {marka:'Dewoo', power:210, owner:{name:'Vitya',age:28,experience:5}, price:13333, year:2005};
+let car3 = {marka:'Lada', power:300, owner:{name:'Oleg',age:32,experience:12}, price:2000, year:1999};
+let car4 = {marka:'Mercedes', power:450, owner:{name:'Pylyp',age:45,experience:14}, price:1999990, year:2021};
+let car5 = {marka:'Lambo', power:800, owner:{name:'David',age:28,experience:4}, price:700000, year:2022};
+let car6 = {marka:'Ferrari', power:550, owner:{name:'Vika',age:18,experience:1}, price:300000, year:2019};
+let car7 = {marka:'Chevrole', power:200, owner:{name:'Sergiy',age:48,experience:20}, price:7000, year:2008};
+const arr = [car1,car2,car3,car4,car5,car6,car7];
+//
+// //     Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
+class
+
+// На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій).
+
+
+
+// Для початку вкладіть всі наші створені автомобілі в масив cars.
+//     Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
+// Після того зробити перевірку досвіду ВСІХ наших водіїв. Якщо досвід водія менший за 5 років, але його вік більший за 25, то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік.
+//     Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі
+//
 

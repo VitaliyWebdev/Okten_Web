@@ -1,18 +1,18 @@
 // створити функцію яка виводить масив
-arr=[1,2,3,4,5,6,7,true,false]
-function array(putarr){
-    console.log(putarr);
-}
-array(arr);
-//створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попвередню функцію.
- let arrempty =[];
-function randomarr(putarr){
-    for( let i=0;i<10;i++){
-        arrempty[i]=Math.random()
-    }
-    array(arrempty)
-}
-randomarr();
+// arr=[1,2,3,4,5,6,7,true,false]
+// function array(putarr){
+//     console.log(putarr);
+// }
+// array(arr);
+// //створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попвередню функцію.
+//  let arrempty =[];
+// function randomarr(putarr){
+//     for( let i=0;i<10;i++){
+//         arrempty[i]=Math.random()
+//     }
+//     array(arrempty)
+// }
+// randomarr();
 
 
 //- створити функцію яка приймає три числа та виводить та повертає найменьше.

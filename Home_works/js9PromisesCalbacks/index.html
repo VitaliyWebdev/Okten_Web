@@ -457,96 +457,19 @@
     // l (затримка 0.3)
     // l (затримка 0.7)
     // о (затримка 1)
-    //
-    // #task
 
-    let words = 'Hello'.toLowerCase();
-    let arr = words.split('');
+    arr='Hello World  Hello World Hello World Hello World'.split('');
 
-    function h(array){
-        return new Promise(resolve => {
-            setTimeout(()=>{
-                for (const item of array) {
-                    if(item==='h'){
-                        resolve(item)
-
-                    }
-                }
-            },100)
-
-        })
+    let count = 0;
+    function letterMachine(arr){
+        if(count>arr.length-1){
+            return 1   ;
+        }
+        setTimeout(()=>{
+            return document.write(arr[count++]) + letterMachine(arr)
+        },Math.random())
 
     }
-
-    function e(array){
-        return new Promise(resolve => {
-            setTimeout(()=>{
-                for (const item of array) {
-                    if(item==='e'){
-                        resolve(item)
-
-                    }
-                }
-            },400)
-
-        })
-
-    }
-    function l(array){
-        return new Promise(resolve => {
-            setTimeout(()=>{
-                for (const item of array) {
-                    if(item==='l'){
-                        resolve(item)
-
-                    }
-                }
-            },600)
-
-        })
-
-    }
-    function o(array){
-        return new Promise(resolve => {
-            setTimeout(()=>{
-                for (const item of array) {
-                    if(item==='o'){
-                        resolve(item)
-
-                    }
-                }
-            },1000)
-
-        })
-
-    }
-
-async function machine(){
-try {
-    let letterH = await h(arr);
-    document.write(letterH);
-
-    let letterE = await e(arr);
-    document.write(letterE);
-
-
-    let letterL = await l(arr);
-   document.write(letterL);
-
-    let letterLSecond = await l(arr);
-    document.write(letterLSecond);
-
-    let letterO = await o(arr);
-    document.write(letterO);
-
-
-}catch (err){
-
-}
-    }
-
-machine()
-
 
 </script>
 </body>
