@@ -55,7 +55,7 @@
 //     console.log(max);
 //     return min;
 // }
-// let min = returnMinprintMax(1,2,3,4,5,6,7,8,9)
+// let min = return MinprintMax(1,2,3,4,5,6,7,8,9)
 // console.log(min);
 //
 //створити функцію яка виводить масив
@@ -341,25 +341,18 @@
 
 
 //створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.???
-// let  x= 0;
-// let y =0;
-// let n =0;
-// arr=[1,2,3,4,5];
-// function args() {
-//   for (const argument of arguments) {
-//       y+=argument;
-//       for (const items of argument) {
-//           x +=items
-//           n=x/y;
-//       }
+// let arr=[1,2,3,4,5];
 //
-//   }
-//
-// return x/y;
-//
+// function midleArifmetic(array){
+//     let n=0;
+//     let x=0;
+//     for (const item of array) {
+//         n++;
+//         x+=item;
+//     }
+//     console.log(x/n)
 // }
-// args(arr)
-
+// midleArifmetic(arr)
 // Створити функцію яка приймає масив будь яких объектів, та повертає значення кількості об'єктів в масиві
 //
 // const arr = [{age:25},{name:'ssfsf'},{index:12,car:'Porsche'}];
@@ -409,16 +402,7 @@
 // sum(arr1,arr2)
 // *** приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1" ?
 
-// let arr= [1,2,3,4,5,6,7,8,9,10];
-//
-// function changearray(array){
-//     for (const item of arr) {
-//         console.log(item);
-//
-//     }
-// }
-//
-// changearray(arr)
+
 //
 // створити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
 //     Двожина масиву від 2 до 100
@@ -427,17 +411,18 @@
 //     [0,1,2,3,4] => [1,2,3,4,0]
 //     [0,0,1,0]   => [1,0,0,0]
 
-// let arr= [1,0,6,0,3];
-//
-// function zeroarr(array,i)
-// for (let i = 0; i < arr.length; i++) {
-//     if(arr[i] === 0 ){
-//
-//
-//     }
-//
-// }
+let arr= [1,0,6,0,3];
 
+function zeroarr(array) {
+    for (const item of array) {
+        if(item===0){
+
+    }
+
+    }
+    console.log(array)
+}
+zeroarr(arr)
 // let sum=0;
 // for (let i = 0; i <= 100; i++) {
 //    sum+=i;

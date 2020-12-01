@@ -595,22 +595,22 @@
 //
 //
 
-
-const user={
-    name:'Alex',
-    age:100
-}
-
-
-let xxx={};
-for(const key in user){
-    console.log(key, user[key]);
-    xxx[key]=user[key]
-}
-console.log(xxx);
-xxx.name = 'Oleg'
-console.log(user);
-console.log(xxx);
+//
+// const user={
+//     name:'Alex',
+//     age:100
+// }
+//
+//
+// let xxx={};
+// for(const key in user){
+//     console.log(key, user[key]);
+//     xxx[key]=user[key]
+// }
+// console.log(xxx);
+// xxx.name = 'Oleg'
+// console.log(user);
+// console.log(xxx);
 
 
 

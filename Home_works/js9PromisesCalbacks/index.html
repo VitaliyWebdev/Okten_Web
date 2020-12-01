@@ -5,8 +5,8 @@
     <title>Title</title>
 </head>
 <body>
+<div id="target"></div>
 <script>
-
 
 
     // Треба реалізувати свій розпорядок дня.
@@ -26,7 +26,7 @@
     //     #task
 
 
-    ////////////////////////////callllllllllllllll backkkkkkkkkkkkkkkkkkk/////////////////////////////
+    // ////////////////////////////callllllllllllllll backkkkkkkkkkkkkkkkkkk/////////////////////////////
     //     function myDay(number,doSport){
     //         console.log('Прокидаюся')
     //
@@ -175,12 +175,12 @@
     //             })
     //         })
     //     })
-    //})
+    // })
 
 
-    ///// PROMISES///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
+    // ///// PROMISES///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //
     // function myDay(number) {
     //
     //     return new Promise((resolve, reject) => {
@@ -275,9 +275,9 @@
     //         console.log('Збираюся спати');
     //         setTimeout(() => {
     //             if (number < 0.5) {
-    //                 reject('Нема чого спати, треба вчитися', null);
+    //                 reject('Нема чого спати, треба вчитися');
     //             } else {
-    //                 resolve(null, 'Спатоньки...ZzZzZzZzZzZ')
+    //                 resolve( 'Спатоньки...ZzZzZzZzZzZ')
     //             }
     //         }, 1000)
     //     })
@@ -312,8 +312,6 @@
     //     }).finally(() => {
     //     console.log('От і день пройшов...')
     // })
-
-
 
 
     // //Async Await ==============
@@ -444,7 +442,6 @@
     // myDay()
 
 
-
     // Реалізувати друкарську машинку.
     //     У вас є текст "Hello World".
     //     Ваша функція має друкувати цей текст по 1 симоволу в браузері.
@@ -457,19 +454,119 @@
     // l (затримка 0.3)
     // l (затримка 0.7)
     // о (затримка 1)
+    //
+    // arr='Hello World  Hello World Hello World Hello World'.split('');
+    //
+    // let count = 0;
+    // function letterMachine(arr){
+    //     if(count>arr.length-1){
+    //         return 1   ;
+    //     }
+    //     setTimeout(()=>{
+    //         return document.write(arr[count++]) + letterMachine(arr)
+    //     },Math.random())
+    //
+    // }
 
-    arr='Hello World  Hello World Hello World Hello World'.split('');
 
-    let count = 0;
-    function letterMachine(arr){
-        if(count>arr.length-1){
-            return 1   ;
-        }
-        setTimeout(()=>{
-            return document.write(arr[count++]) + letterMachine(arr)
-        },Math.random())
+    //
+    //     function func(){
+    //         return function hey(){
+    //             console.log('Hello')
+    //         }
+    //     }
+    //
+    // let b = func();
+    //     b()
+    // console.log(func());
 
-    }
+//     function foobar(name, age) {
+//         let user = {name, age}
+//
+//         function setName(name) {
+//             if (name !== 'fuck') {
+//                 user.name = name
+//             }
+//         }
+//
+//         function setAge(age) {
+//             if (age > 0) {
+//                 user.age = age;
+//             }
+//         }
+//
+//         let newObj= {
+//             setName,
+//              setAge,
+//             getAge,
+//             getName
+//         }
+// return newObj;
+//         function getAge(){
+//             return user.age
+//         }
+//         function getName(){
+//             return user.name
+//         }
+//     }
+//
+//     let xxx = foobar('vasya', 31);
+//    xxx.setAge(10);
+//     console.log(xxx.getAge());
+//
+//
+//     let x =22
+//     let asd={
+//         x
+//     }
+//     console.log(asd);
+
+
+
+// let user ={
+//     name:'Vasil',
+//     age:31,
+//     greeting:function (msg){
+//         console.log(`${msg} my name is ${this.name} i am ${this.age} old`)
+//     }
+// }
+//
+//
+//
+//
+// let friend = {
+//     name:'Kokos',
+//     age:21
+// }
+// user.greeting.apply(friend,['hello girls'])
+//
+//
+//
+
+// let mapa = new Map;
+// mapa.set('filosof',{name:'vITYA',age:45});
+//     console.log(mapa.get('filosof'));
+
+
+
+// targ=document.getElementById('target');
+//
+//     fetch('https://jsonplaceholder.typicode.com/users')
+//     .then(response=>{
+//         return response.json()
+//     }).then(result=>{
+//         for (const item of result) {
+//          let div = document.createElement('div');
+// div.innerText=`${item.id} ${item.name}`
+//             targ.appendChild(div)
+//         }
+//     })
+
+
+
+
+
+
 
 </script>
 </body>

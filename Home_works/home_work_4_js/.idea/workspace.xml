@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="665078eb-cef2-48d4-afb3-bf0f8a835aac" name="Default Changelist" comment="learn js">
-      <change beforePath="$PROJECT_DIR$/if_else_switch.js" beforeDir="false" afterPath="$PROJECT_DIR$/if_else_switch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1jSgy3hudVg1cZFKH2dgRERmeeB" />
@@ -40,7 +41,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../js4" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -55,6 +56,8 @@
       <workItem from="1603803423799" duration="703000" />
       <workItem from="1603813666436" duration="229000" />
       <workItem from="1603813953955" duration="365000" />
+      <workItem from="1604606150517" duration="32000" />
+      <workItem from="1604920897831" duration="16000" />
     </task>
     <servers />
   </component>
@@ -74,10 +77,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="237" key="FileChooserDialogImpl" timestamp="1603804126043">
+    <state x="23" y="0" key="FileChooserDialogImpl" timestamp="1604920912753">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="0" y="237" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1603804126043" />
+    <state x="23" y="0" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604920912753" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1603803921103">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
