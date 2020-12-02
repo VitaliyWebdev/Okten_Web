@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 
-
+const obj ={color:"red",backgroundColor:'green',marginBottom:"10px"}
 const cars = [
     {
         model: 'BMW X7 M competition',
@@ -44,9 +44,9 @@ class Cars extends Component {
     render() {
         this.cars=cars;
         return (
-            <div className={"target"}>
+            <div >
                 {
-                    this.cars.map(car=>(<p>{car.model}-{car.madeYear}-{car.model}-{car.power}-{car.color}-{car.driver.name}-{car.driver.age}-{car.driver.gender}-{car.driver.experience}</p>))
+                    this.cars.map(car=>(<p style={obj}>{car.model}-{car.madeYear}-{car.model}-{car.power}-{car.color}-{car.driver.name}-{car.driver.age}-{car.driver.gender}-{car.driver.experience}</p>))
                 }
             </div>
         );

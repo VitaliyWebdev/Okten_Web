@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-
+const myObj = {
+    backgroundColor:"black",color:"orange"
+}
 const  users = [
     {name: 'vasya', age: 31, status: false},
     {name: 'petya', age: 30, status: true},
@@ -19,7 +21,7 @@ class User extends Component {
         return (
             <div>
                 {
-                 this.users.map(user=>(<p>{user.name} - {user.age} - {user.status.toString()}</p>))
+                 this.users.map(user=>(<p style={myObj}>{user.name} - {user.age} - {user.status.toString()}</p>))
                 }
             </div>
         );
