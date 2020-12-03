@@ -1,0 +1,14 @@
+.span-Box{
+    border: 1px solid black;
+    padding:1px;
+    margin: 10px 10px;
+}
+.flex-box{
+    display: flex;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
