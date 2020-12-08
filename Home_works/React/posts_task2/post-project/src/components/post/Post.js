@@ -8,12 +8,12 @@ import {
 } from "react-router-dom";
 class Post extends Component {
     render() {
-        let {item,match:url} = this.props;
+        let {item,match: {url}} = this.props;
         return (
             <div>
 
                     {item.title}
-                <Link to={`posts/${item.id}`}>click</Link>
+                <Link to={`${url}/${item.id}`}>click</Link>
 
             </div>
         );
