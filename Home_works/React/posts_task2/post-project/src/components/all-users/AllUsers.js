@@ -30,7 +30,7 @@ class AllUsers extends Component {
                     <Switch>
                         <Route path={'/users/:id'} render={(props)=>{
                             console.log(props)
-                            return
+                            return//
                         }}/>
 
                     </Switch>

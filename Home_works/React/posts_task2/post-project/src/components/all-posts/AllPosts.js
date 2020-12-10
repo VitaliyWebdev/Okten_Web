@@ -16,7 +16,7 @@ class AllPosts extends Component {
     render() {
         let {posts} = this.state;
 
-        return (
+        return (//
             <div>
                 {
                     posts.map(value=>(<Post item={value} key={value.id}/>))

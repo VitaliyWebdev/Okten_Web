@@ -1,0 +1,9 @@
+.box{
+    background-color: lawngreen;
+    margin-bottom: 2px;
+    color: darkred;
+}
+.switch-box{
+    background-color: green;
+    border: 1px solid black;
+}

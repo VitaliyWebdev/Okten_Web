@@ -11,7 +11,7 @@ class Post extends Component {
         let {item,match: {url}} = this.props;
         return (
             <div>
-
+//
                     {item.title}
                 <Link to={`${url}/${item.id}`}>click</Link>
 
