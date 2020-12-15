@@ -4,20 +4,16 @@ import User from "./User";
 class AllUsers extends Component {
 
     myForm = React.createRef();
-state = {num:'',user:[]}
+state = {num:''}
+
     send = (event) =>{
         event.preventDefault();
-      this.setState({num:this.myForm.current[0].value})
+        this.setState({num:this.myForm.current[0].value})
     }
 
-    componentDidMount() {
-
-        fetch('https://jsonplaceholder.typicode.com/users/'+this.state.num).then(value => value.json()).then(value => this.setState({user:value}))
-
-    }
     render() {
-let {num,user} = this.state;
-        console.log(num);
+let {num} = this.state;
+
         return (
             <div>
                 <form action={'/chosenUser'} onSubmit={this.send} ref={this.myForm}>
@@ -25,9 +21,7 @@ let {num,user} = this.state;
                     <button>open user by id</button>
                 </form>
                 <hr/>
-                {
-                    user.map(value => <User key={value.id} item={value}/>)
-                }
+              <User numb={num} key={Math.random()}/>
                 <hr/>
             </div>
         );
