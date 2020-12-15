@@ -12,12 +12,11 @@ this.setState({user})
 
     render() {
         let {numb} = this.props;
-        console.log(numb);
         let {user} = this.state;
         console.log(user);
         return (
             <div>
-                {user && user.name}
+                {user && <p>{user.name}   {user.id}  {user.email}</p> }
             </div>
         );
     }
