@@ -7,20 +7,17 @@ import {
     withRouter,
     Link
 } from "react-router-dom";
+
 class User extends Component {
     render() {
-        let {item,match:{url}} = this.props;
-
+        let {item, match: {url}} = this.props;
         return (
             <div className={'item-box'}>
                 <div className="items">{item.id}.{item.name}
-                    <div className={'link-button'} >
-                        <Link className={'link'} to={url+'/'+item.id}>details</Link>
-                        <Link className={'link-post'} to={'/posts'}>posts</Link>
+                    <div className={'link-button'}>
+                        <Link className={'link'} to={url + '/' + item.id}>details</Link>
+                        <Link className={'link-post'} to={'users/1/posts'}>posts</Link>
                     </div>
-
-
-
                 </div>
 
             </div>

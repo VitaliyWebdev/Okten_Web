@@ -9,27 +9,35 @@ import {
     withRouter
 } from "react-router-dom";
 import ChosenUser from "./ChosenUser";
+import ChosenPost from "../PostsComponents/ChosenPost";
+import AllPosts from "../PostsComponents/AllPosts";
+import PostService from "../../Services/PostService";
+import Post from "../PostsComponents/Post";
 
 class AllUsers extends Component {
 
     userService = new UserService();
+    postService = new PostService();
     state = {users: [], chosenOne: null}
 
     async componentDidMount() {
         let users = await this.userService.getAllUsers();
         this.setState({users})
+
+
     }
 
+
+
     render() {
-        console.log(this.props);
+
         let {match: {url}} = this.props
-        let {users} = this.state;
+        let {users,posts} = this.state;
         return (<div className={'main-all-users-box'}>
                 <div className={'all-users'}>
                     {
                         users.map(value => <User key={value.id} item={value}/>)
                     }
-
                 </div>
 
                 <Switch>
@@ -43,7 +51,16 @@ class AllUsers extends Component {
                         </div>)
                     }}/>
 
+                    <Route path={'/posts'}>
+                        <AllUsers/>
+                        <AllPosts/>
+                        <User/>
+                        <ChosenUser/>
+                    </Route>
 
+
+
+}/>
                 </Switch>
 
 

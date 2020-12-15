@@ -24,10 +24,11 @@ let {match:{params:{id}}} = this.props;
                 <div className={'chosen-name'}>{chosenOne.name}<p className={'user-name'}>{chosenOne.username}</p>
                 <hr/>
                 </div>
-                    <ul>
-                        <li>Phone:<p>{chosenOne.phone}</p></li>
-                        <li>Email: <p>{chosenOne.email}</p></li>
-                    </ul>
+                    <div className={'list'}>
+                        <p><b>Phone:</b> {chosenOne.phone}</p>
+                        <p> <b>Email:</b> {chosenOne.email}</p>
+                    </div>
+                    <p><b>Website</b> {chosenOne.website}</p>
                 </div>
                 }
             </div>

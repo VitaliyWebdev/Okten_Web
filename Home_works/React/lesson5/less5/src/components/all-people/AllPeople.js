@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import FullPeople from "../../full-people/FullPeople";
 class AllPeople extends Component {
+
 state={people:[]}
 peopleService = new PeopleService();
 

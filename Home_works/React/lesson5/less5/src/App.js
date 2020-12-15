@@ -4,6 +4,7 @@ import AllUsers from "./components/allUsers/AllUsers";
 import AllPosts from "./components/AllPosts/AllPosts";
 import AllComents from "./components/all-coments/AllComents";
 import AllPeople from "./components/all-people/AllPeople";
+import AllStarships from "./components/StarShips/AllStarships";
 
 class App extends Component {
     render() {
@@ -23,6 +24,9 @@ class App extends Component {
                     <li>
                         <Link to={'/people'}>**to people**</Link>
                     </li>
+                    <li>
+                        <Link to={'/starship'}>**to starship**</Link>
+                    </li>
                 </ul>
                 <hr/>
                 <Switch>
@@ -30,6 +34,8 @@ class App extends Component {
                     <Route path={'/posts'} render={()=> <AllPosts/>}/>
                     <Route path={'/comments'} render={()=> <AllComents/>}/>
                     <Route path={'/people'} render={()=> <AllPeople/>}/>
+                    <Route path={'/starship'} render={()=> <AllStarships/>}/>
+                    <Route path={'/starship'} render={()=> <AllStarships/>}/>
                 </Switch>
 
                 <hr/>

@@ -7,6 +7,7 @@ import {
     Link
 } from "react-router-dom";
 import AllUsers from "./components/UserComponents/AllUsers";
+import AllPosts from "./components/PostsComponents/AllPosts";
 class App extends Component {
     render() {
         return (
@@ -19,9 +20,13 @@ class App extends Component {
 
                 <Switch>
                     <Route path={'/users'} render={()=>{
-                        return <AllUsers/>
-                    }}/>
+                        return (<AllUsers/>
 
+                        );
+                    }}/>
+<Route path={'/posts'} render={()=>{
+    return <AllPosts/>
+}}/>
                 </Switch>
 
             </div>
