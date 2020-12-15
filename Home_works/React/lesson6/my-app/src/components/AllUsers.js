@@ -4,15 +4,19 @@ import User from "./User";
 class AllUsers extends Component {
 
     myForm = React.createRef();
-state = {num:''}
+state = {num:'',user:[]}
     send = (event) =>{
         event.preventDefault();
-      this.setState({user:this.myForm.current[0].value})
+      this.setState({num:this.myForm.current[0].value})
     }
 
-    
+    componentDidMount() {
+
+        fetch('https://jsonplaceholder.typicode.com/users/'+this.state.num).then(value => value.json()).then(value => this.setState({user:value}))
+
+    }
     render() {
-let {num} = this.state;
+let {num,user} = this.state;
         console.log(num);
         return (
             <div>
@@ -21,7 +25,9 @@ let {num} = this.state;
                     <button>open user by id</button>
                 </form>
                 <hr/>
-                <User user={num}/>
+                {
+                    user.map(value => <User key={value.id} item={value}/>)
+                }
                 <hr/>
             </div>
         );
