@@ -21,7 +21,8 @@ const initialState = {
 
 export default function App (){
     const [count,setCount] = useState(0);
-    let [state,dispatch] = useReducer(reducer,initialState);
+    const [state,dispatch] = useReducer(reducer,initialState);
+    
 useEffect(()=>{
     fetch(`https://jsonplaceholder.typicode.com/todos/${count}`).then(value=>value.json()).then(value=>dispatch({type:'change',payload:value}))
 },[count])
@@ -37,7 +38,7 @@ useEffect(()=>{
                 !!state && (<>
                     <p>{state.id}</p>
                     <p>{state.title}</p>
-                    <p>{state.completed}</p>
+                    <p>{state.completed.toString()}</p>
                 </>)
             }
 
