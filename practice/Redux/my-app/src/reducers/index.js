@@ -9,8 +9,11 @@ export const reducer = (state = initialState.user, action) => {
             return [...state]
         }
         case "DELETE_USER":{
-            const filter = state.filter(value=>value.id !== action.payload)
+
+            const filter = state.filter(value=>value.id !== action.payload);
+            console.log(action.payload);
             return [...filter];
+
         }
         default :{
             return state;
