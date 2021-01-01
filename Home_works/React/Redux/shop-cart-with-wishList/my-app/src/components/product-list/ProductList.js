@@ -6,7 +6,8 @@ import {toggleItemInCart,toggleItemInWishList} from "../../redux/action-creators
 export const ProductList = ({products}) =>{
     const dispatch = useDispatch();
 const {wishlist,cart} = useSelector(({wishlist:{wishlist},cart:{cart} } ) => ({wishlist,cart}) )
-    console.log(cart);
+
+
     const onAddToWishList = (product)=>{
 dispatch(toggleItemInWishList(product))
     }
