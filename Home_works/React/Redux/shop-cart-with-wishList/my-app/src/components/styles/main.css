@@ -1,0 +1,16 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+}
+.box {
+    display: flex;
+border: 1px solid black;
+    background-color: grey;
+}
+.padding{
+    padding: 10px 35px;
+    margin:10px 45px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
