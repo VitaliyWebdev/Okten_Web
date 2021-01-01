@@ -33,7 +33,7 @@ const {wishlist,products,cart} = useSelector(({wishlist:{wishlist},products:{pro
         <div>
 
             <Header/>
-            <ProductList/>
+            <ProductList products={products}/>
 <h2>{products.length}</h2>
         </div>
     );
