@@ -4,7 +4,7 @@ import {useSelector} from "react-redux";
 
 export const Header = (props) =>{
     const {cart,wishlist} = useSelector(({cart: {cart},wishlist:{wishlist}})=>({cart,wishlist}))
-
+    console.log(cart);
 
     let cartPrice = 0;
     let wishListPrice = 0;

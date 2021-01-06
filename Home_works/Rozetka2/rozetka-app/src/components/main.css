@@ -1,0 +1,119 @@
+.bacground-img{
+    background-color: #fffec6;
+    display: flex;
+    justify-content: center;
+}
+header{
+    background-color: #122538;
+}
+.header-topline{
+    display: flex;
+    justify-content: flex-start;
+}
+.phone-btn{
+    width: 110px;
+    height: 14px;
+    background-color: transparent;
+    border:none;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    color: #fff;
+    cursor: pointer
+}
+.arrow-icon{
+   max-width: 10px;
+    transform: rotate(90deg);
+
+}
+.header-phones{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+li{
+    padding-left: 15px;
+    list-style-type: none;
+}
+.white-link{
+    color: white;
+}
+a{
+    font-size: 13px;
+    text-decoration: none;
+
+}
+a:hover { text-decoration:underline ;color: white; }
+
+.header-topline-list{
+    padding-top: 10px;
+    justify-content: center;
+}
+.languages{
+    color: white;
+    margin-left: 400px;
+
+}
+.main-info-box{
+    display: flex;
+    justify-content: center;
+
+}
+.vertical-line{
+    font-size: 13px;
+}
+.m-left{
+    margin-left: 4px;
+}
+.pd-10px{
+    padding-left: 10px;
+}
+.pd-l{
+    padding-left: 30px;
+
+}
+.pd-22px{
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size: 13px;
+}
+.ml-30{
+    margin-left: 30px;
+}
+.header-bottom-line{
+    padding-bottom:15px;
+}
+.menu-toggler {
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: 700;
+    color: #fff;
+}
+
+.search-input{
+width: 385px;
+    height: 44px;
+}
+.find-btn{
+    min-width: 52px;
+    background-color: #00a046;
+    color: #fff;
+    margin: 0;
+    border-radius: 0 3px 3px 0;
+    min-height: 41px;
+}
+.ml-160{
+    margin-left: 160px;
+}
+input{
+    border-radius: 3px;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+}
