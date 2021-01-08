@@ -1,0 +1,98 @@
+.menu-wrapper{
+border-right: 1px solid #adb8c8;
+}
+.list-item :hover {
+    color: red;
+}
+.list-item {
+font-size: 20px;
+    padding: 4px;
+}
+.list-box{
+    padding-left: 20px;
+}
+.pd-left{
+    padding-left: 90px;
+}
+.menu-wrapper{
+    min-width: 250px;
+}
+.main-side-bar{
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #797878;
+    text-align: center;
+}
+.main-stores{
+    border-bottom: 1px solid #adb8c8;
+}
+.google-box{
+    margin-bottom: 10px;
+}
+.main-support__phone{
+    font-size: 16px;
+    color: #221f1f;
+}
+.phones-box :hover{
+    color: red;
+}
+.main-support__timing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 12px;
+    margin-left: 30px;
+    border-bottom: 1px solid #adb8c8;
+}
+.time-box{
+    margin-left: 37px;
+    font-size: 12px;
+    line-height: 24px;
+}
+.phones-box {
+    margin-left: 30px;
+}
+.main-sidebar__block{
+
+}
+.main-sidebar__heading {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    color: #797878;
+padding: 0;
+    text-align: center;
+}
+.main-socials-link{
+    position: relative;
+    border-radius: 50px;
+    background-color: #506098;
+    display: inline-block;
+    width: 28px;
+    height: 28px
+}
+.svg-icons-socials{
+    position: absolute;
+    bottom: 5px;
+    right: 9px;
+}
+.twiter-back-color {
+    background-color: #76c9fd
+}
+.youtoobe-back-color{
+   background-color:  #e90000;
+}
+.main-links__heading {
+   text-align: center;
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+.main-link{
+    font-size: 16px;
+}
+.main-item :hover{
+    color: red;
+}
+.main-item{
+    margin-bottom: 5px;
+}
+
