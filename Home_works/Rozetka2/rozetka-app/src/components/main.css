@@ -6,6 +6,9 @@
 header{
     background-color: #122538;
 }
+.btn-text{
+    margin-left: 15px;
+}
 .header-topline{
     display: flex;
     justify-content: flex-start;
