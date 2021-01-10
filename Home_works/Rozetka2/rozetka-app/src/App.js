@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/Header";
 import Wrapper from "./components/Wrapper";
 import Main from "./components/Main";
+import Slider from "./components/Slider";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 
         <div className="d-flex">
             <Wrapper/>
+            
             <Main/>
         </div>
 

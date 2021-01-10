@@ -168,6 +168,13 @@ export default function Wrapper (){
                     <li className="main-item"><a href="" className="main-link">Переказ грошей з карти на карту</a></li>
                     <li className="main-item"><a href="" className="main-link">Тури та відпочинок</a></li>
                 </ul>
+                <h3 className="main-links__heading">Партнерам</h3>
+                <ul className="main-links__box">
+                    <li className="main-item"><a href="" className="main-link">Продавати на Розетці</a></li>
+                    <li className="main-item"><a href="" className="main-link">Співпраця з нами</a></li>
+                    <li className="main-item"><a href="" className="main-link">Логотип і СтайлГайд</a></li>
+                </ul>
+
 
 
             </div>

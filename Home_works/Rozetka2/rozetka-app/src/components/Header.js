@@ -3,6 +3,7 @@ import '../images/cart.png'
 export default function Header (){
     return (
         <header>
+
             <div className="bacground-img">
                 <img src="https://i1.rozetka.ua/owoxads/9/9741.jpg" alt="congratulation-image"/>
             </div>

@@ -94,6 +94,10 @@ a:hover { text-decoration:underline ;color: white; }
     font-weight: 700;
     color: #fff;
 }
+.menu-toggler:hover{
+    background-color:#1d3853;
+
+}
 
 .search-input{
 width: 385px;
@@ -107,6 +111,9 @@ width: 385px;
     border-radius: 0 3px 3px 0;
     min-height: 41px;
 }
+.find-btn:hover{
+    background-color: #12cd64;
+}
 .ml-160{
     margin-left: 160px;
 }
@@ -119,4 +126,77 @@ input{
 }
 .main-side-barr-shifts{
     align-items: center;
+}
+.item-main-products{
+    border:1px solid #eaeaea;
+}
+.title-picture{
+    box-sizing: border-box;
+    margin: 0 0 16px;
+}
+
+.item-main-products{
+width: 20%;
+    position: relative;
+
+}
+.main-items-box{
+    padding: 30px;
+    margin-top: 10px;
+
+}
+.heart-btn{
+    background-color: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right:8px;
+    margin-left: 100px;
+}
+.heart-btn :hover{
+    background-color: #b7d5e6;
+}
+.item-main-products :hover{
+    color: red;
+}
+.title-picture-description{
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
+}
+.title-picture-box{
+    margin-top: 10px;
+}
+.title-old-price{
+    text-decoration: line-through;
+
+}
+.title-old-price:hover{
+    color: black;
+}
+.link-picture-box{
+  margin-bottom: 30px;
+}
+.old-price:hover{
+    color: #333333;
+}
+.old-price{
+    text-decoration: line-through;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+.curency-old-price{
+    margin-left: 5px;
+    font-size: 17px;
+}
+.mr-30{
+    margin-right: 30px;
+}
+.curent-price{
+    color: red;
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 10px;
 }
